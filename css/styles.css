@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: lightcyan;
+    display: flex;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    padding: 20px
+}
+
+canvas {
+    background-color: skyblue;
+    border-radius: 5px;
+    border: solid;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.score--value {
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    margin-top: -10px;
+}
+
+.menu-screen {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.game-over {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.final-score {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.btn-play {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 15px 10px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px; 
+    height: 200px;
+    margin: 0 auto;
+}
+
+.btn-up, .btn-down, .btn-left, .btn-right {
+    border-color: gray;
+    border-radius: 100px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-up:hover, .btn-left:hover, .btn-right:hover, .btn-down:hover {
+    background-color: lightgray;
+}
+
+.btn-up {
+    position: absolute;
+    top: 10px;
+}
+
+.btn-left {
+    position: absolute;
+    left: 10px;
+}
+
+.btn-right {
+    position: absolute;
+    right: 10px;
+}
+
+.btn-down {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    canvas {
+        max-width: 85%;
+    }
+
+    .game-over {
+        font-size: 1.8rem;
+    }
+    
+    .final-score {
+        font-size: 1.5rem;
+    }
+    
+    .btn-play {
+        font-size: 1rem;
+    }
+
+    .btn-up, .btn-down, .btn-left, .btn-right {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    canvas {
+        max-width: 85%;
+    }
+
+    .score {
+        font-size: 1.6rem; 
+    }
+
+    .score--value {
+        font-size: 1.7rem;
+    }
+
+    .game-over {
+        font-size: 1.7rem;
+    }
+    
+    .final-score {
+        font-size: 1.4rem;
+    }
+
+    .btn-play {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .controls {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    canvas {
+        max-width: 90%;
+    }
+    .score {
+        font-size: 1.2rem;
+    }
+
+    .score--value {
+        font-size: 1.4rem;
+    }
+
+    .game-over {
+        font-size: 1.4rem;
+    }
+    
+    .final-score {
+        font-size: 1.2rem;
+    }
+
+    .btn-play {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .controls {
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn-up, .btn-down, .btn-left, .btn-right {
+        width: 40px;
+        height: 40px;
+    }
+}
