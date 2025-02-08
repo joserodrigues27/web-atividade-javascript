@@ -24,7 +24,7 @@ Repositório para resolução da atividade sobre JavaScript da disciplina de Des
 
 É possível executar/jogar o jogo no seguinte link:
 
-* 
+* https://snake-game-atividade-js.netlify.app/
 
 ## Referências
 
